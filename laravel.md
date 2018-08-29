@@ -49,5 +49,21 @@ Makes querying and working with db very easy
 * Modify ressources/assets/sass/_variables.scss
 
 * Compile assets or watch assets to compile
-> npm run dev<br>
+> npm run dev
+
+or
+
+> npm run watch
+
+## Add custom CSS
+
+* Create **_custom.scss** in ressources/assets/sass
+
+* Add **@import 'custom'** in ressources/assets/sass/app.scss;
+
+* Compile assets
+> npm run dev
+
+or
+
 > npm run watch
