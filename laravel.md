@@ -5,7 +5,11 @@
 * Download composer
 * Install composer
 > composer create-project laravel/laravel _myapp_
-* Add V-Hosts and hosts file entry
+* Add V-Hosts and hosts file entry (optionnal)
+
+## Launch built in PHP server
+
+> php artisan serve
 
 ## Artisan CLI (command line interface)
 
