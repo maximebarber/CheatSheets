@@ -41,3 +41,13 @@ Makes querying and working with db very easy
 > $todo->title = 'Some Todo';<br>
 > $todo->save();<br>
 
+## Compile SASS
+
+* Install node modules
+> install npm
+
+* Modify ressources/assets/sass/_variables.scss
+
+* Compile assets or watch assets to compile
+> npm run dev<br>
+> npm run watch
