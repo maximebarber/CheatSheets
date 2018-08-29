@@ -66,4 +66,17 @@ or
 
 or
 
-> npm run watch
+> npm run 
+
+## Migration
+
+* Create model (**-m** to create migration)
+> php artisan make:model _Post_ -m
+
+* Add fields to table in database/migrations
+```php 
+$table->string('title'); 
+```
+
+* Complete migration 
+> php artisan migrate
