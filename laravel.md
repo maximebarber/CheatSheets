@@ -17,8 +17,8 @@
 
 > php artisan help _migrate_
 
-Create controller (plural)
-> php artisan make:controller _TodosController_
+Create a crud controller (plural)
+> php artisan make:controller _TodosController_ --resource
 
 Create model (singular)
 > php artisan make:model _Todo -m_
@@ -80,3 +80,31 @@ $table->string('title');
 
 * Complete migration 
 > php artisan migrate
+
+## Tinker (generate db data)
+
+* Make sure .env and database.php are correctly configured
+
+* Use tinker
+> php artisan tinker
+
+* Check data count
+> App\ModelName::count()
+
+* Initiate new class
+> $modelName = new App\ModelName();
+
+* Add data
+> $modelName->title = "Titre";
+
+* Save data
+> $modelName->save();
+
+## Show routes
+
+> php artisan route:list
+
+Generate routes for a controller in web.php
+```php
+Route::resource('posts', 'PostsController');
+```
