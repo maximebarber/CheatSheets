@@ -13,6 +13,8 @@
 10. [Create Form w/ Laravel Collective](#10-create-form-w-laravel-collective)
 11. [Create input text editor w/ CKEditor Package](#11-create-input-text-editor-w-ckeditor-package)
 12. [User Authentication](#12-user-authentication)
+13. [Model relationships](#13-model-relationships)
+14. [Access control](#14-access-control)
 
 ## 1. Installation
 
@@ -90,6 +92,38 @@ or
 * Add fields to table in database/migrations
 ```php 
 $table->string('title'); 
+```
+
+* Complete migration 
+> php artisan migrate
+
+### Add field to table
+
+> php artisan make:migration _add_user_id_to_posts_
+
+* Update field
+```php
+public function up()
+{
+    $upField = function ($table) 
+    {
+        $table->integer('user_id');
+    };
+
+    Schema::table('posts', $upField);
+}
+```
+
+* Delete field
+```php
+public function down()
+{
+    $downField = function ($table) {
+        $table->dropColumn('user_id');
+    };
+
+    Schema::table('posts', $addField);
+}
 ```
 
 * Complete migration 
@@ -244,3 +278,48 @@ show.blade.php
 ## 12. User Authentication
 
 > php artisan make:auth / yes
+
+## 13. Model relationships
+
+Post.php
+```php
+public function user()
+{
+    return $this->belongsTo('App\User')
+}
+```
+
+User.php
+```php
+public function posts()
+{
+    return $this->hasMany('App\Post');
+}
+```
+
+Get data w/ blade
+```php
+{{ $post->user->name }}
+```
+
+## 14. Access control
+
+Controller
+```php
+/**
+ * Create a new controller instance.
+ *
+ * @return void
+ */
+public function __construct()
+{
+    $this->middleware('auth', ['except' => ['index', 'show']]);
+}
+```
+
+Manage display in view
+```php
+@if(!Auth::guest())
+    <p>Do not display to guests</p>
+@endif
+```
