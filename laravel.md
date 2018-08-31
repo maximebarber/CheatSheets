@@ -3,7 +3,7 @@
 ## Table of contents
 1. [Installation](#1-installation)
 2. [Launch built in PHP server](#2-launch-built-in-php-server)
-3. [Artisan CLI](#-3-artisan-cli)
+3. [Artisan CLI](#3-artisan-cli)
 4. [Eloquent ORM](#4-eloquent-orm)
 5. [Compile SASS](#5-compile-sass)
 6. [Add custom CSS](#6-add-custom-css)
@@ -242,3 +242,5 @@ show.blade.php
 ```
 
 ## 12. User Authentication
+
+> php artisan make:auth / yes
