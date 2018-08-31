@@ -1,8 +1,8 @@
 # Laravel
 
 ## Table of contents
-1. [Installation](#1.-Installation)
-2. [Launch built in PHP server](#2.-Launch-built-in-PHP-server)
+1. [Installation](#1.-installation)
+2. [Launch built in PHP server](#2.-launch-built-in-php-server)
 3.
 
 ## 1. Installation
