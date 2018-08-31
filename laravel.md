@@ -1,9 +1,18 @@
 # Laravel
 
 ## Table of contents
-1. [Installation](#1-installation)<br>
-2. [Launch built in PHP server](#2-launch-built-in-php-server)<br>
-3.
+1. [Installation](#1-installation)
+2. [Launch built in PHP server](#2-launch-built-in-php-server)
+3. [Artisan CLI](#-3-artisan-cli)
+4. [Eloquent ORM](#4-eloquent-orm)
+5. [Compile SASS](#5-compile-sass)
+6. [Add custom CSS](#6-add-custom-css)
+7. [Migration](#7-migration)
+8. [Tinker](#8-tinker)
+9. [Show routes](#9-show-routes)
+10. [Create Form w/ Laravel Collective](#10-create-form-w-laravel-collective)
+11. [Create input text editor w/ CKEditor Package](#11-create-input-text-editor-w-ckeditor-package)
+12. [User Authentication](#12-user-authentication)
 
 ## 1. Installation
 
@@ -37,7 +46,7 @@ Run migration
 Run tinker and interact with db
 > php artisan tinker
 
-## Eloquent ORM
+## 4. Eloquent ORM
 
 Makes querying and working with db very easy
 
@@ -46,7 +55,7 @@ Makes querying and working with db very easy
 > $todo->title = 'Some Todo';<br>
 > $todo->save();<br>
 
-## Compile SASS
+## 5. Compile SASS
 
 * Install node modules
 > install npm
@@ -60,7 +69,7 @@ or
 
 > npm run watch
 
-## Add custom CSS
+## 6. Add custom CSS
 
 * Create **_custom.scss** in ressources/assets/sass
 
@@ -73,7 +82,7 @@ or
 
 > npm run 
 
-## Migration
+## 7. Migration
 
 * Create model (**-m** to create migration)
 > php artisan make:model _Post_ -m
@@ -86,7 +95,9 @@ $table->string('title');
 * Complete migration 
 > php artisan migrate
 
-## Tinker (generate db data)
+## 8. Tinker
+
+Generate db data
 
 * Make sure .env and database.php are correctly configured
 
@@ -105,7 +116,7 @@ $table->string('title');
 * Save data
 > $modelName->save();
 
-## Show routes
+## 9. Show routes
 
 > php artisan route:list
 
@@ -114,7 +125,7 @@ Generate routes for a controller in web.php
 Route::resource('posts', 'PostsController');
 ```
 
-## Create Form w/ Laravel Collective
+## 10. Create Form w/ Laravel Collective
 
 ### Installation
 
@@ -208,7 +219,7 @@ ressources/views/inc/app.blade.php
     @yield('content')
 </div>
 ```
-## Create input text editor w/ CKEditor Package
+## 11. Create input text editor w/ CKEditor Package
 
 ### Installation
 
@@ -230,4 +241,4 @@ show.blade.php
 {!! $post->body !!}
 ```
 
-## User Authetication
+## 12. User Authentication
