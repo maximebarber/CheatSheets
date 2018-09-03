@@ -61,7 +61,7 @@ Makes querying and working with db very easy
 ## 5. Compile SASS
 
 * Install node modules
-> install npm
+> npm install
 
 * Modify ressources/assets/sass/_variables.scss
 
