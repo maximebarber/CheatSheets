@@ -15,6 +15,7 @@
 12. [User Authentication](#12-user-authentication)
 13. [Model relationships](#13-model-relationships)
 14. [Access control](#14-access-control)
+15. [Link public storage directory](#15-link-public-storage-directory)
 
 ## 1. Installation
 
@@ -323,3 +324,13 @@ Manage display in view
     <p>Do not display to guests</p>
 @endif
 ```
+or
+
+```php
+@if(Auth:user()->id == $post->user_id)
+    <p>Do not display if logged in user did not write this</p>
+@endif
+```
+## 15. Link public storage directory
+
+> php artisan storage:link
