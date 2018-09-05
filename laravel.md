@@ -16,6 +16,8 @@
 13. [Model relationships](#13-model-relationships)
 14. [Access control](#14-access-control)
 15. [Link public storage directory](#15-link-public-storage-directory)
+16. [Use SQLite](#16-use-sqlite)
+17. [Generate pivot table](#17-generate-pivot-table)
 
 ## 1. Installation
 
@@ -334,3 +336,26 @@ or
 ## 15. Link public storage directory
 
 > php artisan storage:link
+
+## 16. Use SQLite
+
+Create SQLite database
+> touch database/database.sqlite
+
+Modify in .env
+> DB_CONNECTION=sqlite
+
+Modify in database.php
+> 'database' => database_path('database.sqlite'),
+
+Test OK if
+> php artisan migrate:status
+returns "No migrations found.
+
+## 17. Generate pivot table
+
+Install generators
+> composer require laracasts/generators --dev
+
+Check new artisan commands
+> php artisan
