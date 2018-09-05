@@ -23,3 +23,7 @@ Projet Dadoun
 
 @todo
 * Envoi emails
+
+Vocabulaire
+* POC : proof of concept
+* MVP : minimum viable product
