@@ -9,8 +9,17 @@
 
 ## 04.09
 
-Projet Dadoun
+Projet Dadoun (@todo)
 * Environnement Laravel et Voyager
 * Forumulaire récupérable et triable en BO
 * Envoi de mails
-* Intégrer ProcessMaker dès qu'il y a des validations   
+* Intégrer ProcessMaker dès qu'il y a des validations 
+
+## 05.09
+
+Projet Dadoun
+* Formulaire avec Form Builder
+* Interface Voyager
+
+@todo
+* Envoi emails
