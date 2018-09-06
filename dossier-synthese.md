@@ -34,3 +34,7 @@ Technologies utilisées
 * Laravel 5.6
 * Laravel Voyager
 * Laravel Voyager Front-End
+
+Traduction du cahier des charges Dadoun
+* Plus clair et structuré
+* Plus technique
