@@ -2,7 +2,7 @@
 
 ## 03.09
 
- Approfondissement carte interactive Ornikar 
+Approfondissement carte interactive Ornikar 
 * Ajout formateurs
 * Migration vers laravel
 * Ajout authentication
@@ -27,3 +27,10 @@ Projet Dadoun
 Vocabulaire
 * POC : proof of concept
 * MVP : minimum viable product
+
+## 06.09
+
+Technologies utilisées
+* Laravel 5.6
+* Laravel Voyager
+* Laravel Voyager Front-End

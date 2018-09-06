@@ -78,14 +78,14 @@ or
 
 * Create **_custom.scss** in ressources/assets/sass
 
-* Add **@import 'custom'** in ressources/assets/sass/app.scss;
+* Add **@import 'custom';** in ressources/assets/sass/app.scss;
 
 * Compile assets
 > npm run dev
 
 or
 
-> npm run 
+> npm run watch
 
 ## 7. Migration
 
