@@ -92,7 +92,7 @@ Nous montons, gérons et entretenons pour elles les marchés alimentaires de leu
 
 ##### 3.1.2.3 Reporting incidents techniques
 
--Une explication succincte de l'incident (quand, ou, quoi)
+- Une explication succincte de l'incident (quand, ou, quoi)
 - photographies
 - suivi du problème (nom intervenants dates suite données …)
 - pièces jointes éventuelles
