@@ -18,6 +18,7 @@
 15. [Link public storage directory](#15-link-public-storage-directory)
 16. [Use SQLite](#16-use-sqlite)
 17. [Generate pivot table](#17-generate-pivot-table)
+18. [Form send email](#18-form-send-email)
 
 ## 1. Installation
 
@@ -363,3 +364,37 @@ Install generators
 
 Check new artisan commands
 > php artisan
+
+## 18. Form send email
+
+https://hdtuto.com/article/php-laravel-56-send-email-using-mail-example
+
+Configure SMTP .env
+> MAIL_DRIVER=smtp<br>
+MAIL_HOST=smtp.gmail.com<br>
+MAIL_PORT=587<br>
+MAIL_USERNAME=addYourEmail<br>
+MAIL_PASSWORD=AddYourEmailPassword<br>
+MAIL_ENCRYPTION=tls<br>
+
+Create Mail Class
+> php artisan make:mail HDTutoMail
+
+Create view
+
+Create Route
+```php
+Route::get('HDTutoMail', function () {
+    $user = \App\User::find(1);
+
+    Mail::to($user->email)->send(new \App\Mail\HDTutoMail($user));
+});
+```
+
+Redirect to correct route in controller
+
+Debugging
+
+* > php artisan config:clear
+* > php artisan serve
+* Allow less secure
