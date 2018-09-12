@@ -1,24 +1,6 @@
 # Laravel
 
-## Table of contents
-1. [Installation](#1-installation)
-2. [Launch built in PHP server](#2-launch-built-in-php-server)
-3. [Artisan CLI](#3-artisan-cli)
-4. [Eloquent ORM](#4-eloquent-orm)
-5. [Compile SASS](#5-compile-sass)
-6. [Add custom CSS](#6-add-custom-css)
-7. [Migration](#7-migration)
-8. [Tinker](#8-tinker)
-9. [Show routes](#9-show-routes)
-10. [Create Form w/ Laravel Collective](#10-create-form-w-laravel-collective)
-11. [Create input text editor w/ CKEditor Package](#11-create-input-text-editor-w-ckeditor-package)
-12. [User Authentication](#12-user-authentication)
-13. [Model relationships](#13-model-relationships)
-14. [Access control](#14-access-control)
-15. [Link public storage directory](#15-link-public-storage-directory)
-16. [Use SQLite](#16-use-sqlite)
-17. [Generate pivot table](#17-generate-pivot-table)
-18. [Form send email](#18-form-send-email)
+[TOC]
 
 ## 1. Installation
 
