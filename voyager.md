@@ -9,8 +9,10 @@
 
 * Create new laravel project
 > composer create-project laravel/laravel _myapp_
-* > composer require tcg/voyager
+* Require voyager package
+> composer require tcg/voyager
 * Modify .env if neccessary
+* Install voyager
 > php artisan voyager:install (--with-dummy)
 * Create new admin
 > php artisan voyager:admin your@email.com --create
