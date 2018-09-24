@@ -41,7 +41,7 @@ Configure .env
 
 ## Get Data
 
-Create model
+### Create model
 > php artisan make:model {TableName}
 
 ```php
@@ -52,7 +52,7 @@ use Yajra\Oci8\Eloquent\OracleEloquent as Eloquent;
 class {ClassName} extends Eloquent{}
 ```
 
-Create controller and test
+### Create controller and test
 > php artisan make:controller {TableName}Controller --resource
 
 ```php
@@ -73,9 +73,17 @@ class {ControllerName} extends Controller
      */
     public function index()
     {
-        $test = DB::select('select * from {TableName}');
-        return view('{TableName}.index')->with('test', $test);
+        $tests = DB::select('select * from {TableName}');
+        return view('{TableName}.index')->with('tests', $tests);
     }
+```
+
+### Create blade view
+
+```php
+@foreach($tests as $test)
+    {{ $tests->field_name }}
+@endforeach
 ```
 
 ## Useful links
