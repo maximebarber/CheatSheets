@@ -31,7 +31,7 @@ Yajra\Oci8\Oci8ServiceProvider::class,
 Create configuration file (config/oracle.php)
 > php artisan vendor:publish --tag=oracle
 
-Configure .env
+Configure .env/oracle.php
 ```php
 'driver'         => 'oracle',
 'tns'            => '(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST={host})(PORT={port}))(CONNECT_DATA=(SERVICE_NAME={sid})))',
