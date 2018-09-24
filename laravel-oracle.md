@@ -12,6 +12,9 @@ For MAC
 * http://techblog.ankitaoza.com/2017/04/07/installing-php-oci8-extension-on-mac-osx10-11-6/
 * https://antistatique.net/fr/nous/bloggons/2013/03/25/install-php-oracle-oci-extension-11-2-on-mac-os-x-10-8
 
+Check if installed
+> php -m
+
 ## Install Laravel OCI8
 
 Get Laravel version
