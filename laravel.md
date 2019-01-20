@@ -380,3 +380,17 @@ Debugging
 * > php artisan config:clear
 * > php artisan serve
 * Allow less secure
+
+## 19. Use node_module file as asset
+
+* Make sure node and npm are installed
+* Install Laravel Mix
+> npm install
+* Add to webpack.mix.js file
+```js
+mix.copy('node_modules/chart.js/dist/Chart.js', 'public/js/Chart.js');
+```
+* Run mix
+> npm run dev
+* Or minify output for production
+> npm run production
